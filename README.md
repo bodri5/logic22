@@ -8,3 +8,6 @@ https://www.fecundity.com/logic
 
 Jack Sanders: Symbolic Logic video series
 https://www.youtube.com/playlist?list=PLg4lEYaHO--SCOFMdrTNyPyOuqLrdVHBc
+
+How to use breadboards:
+https://www.youtube.com/watch?v=6WReFkfrUIk
