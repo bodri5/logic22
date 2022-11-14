@@ -11,3 +11,10 @@ https://www.youtube.com/playlist?list=PLg4lEYaHO--SCOFMdrTNyPyOuqLrdVHBc
 
 How to use breadboards:
 https://www.youtube.com/watch?v=6WReFkfrUIk
+
+## The Coq system:
+
+https://coq.inria.fr
+
+Coq installer:
+https://github.com/coq/platform/releases/tag/2022.04.1
