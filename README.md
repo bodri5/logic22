@@ -18,3 +18,5 @@ https://coq.inria.fr
 
 Coq installer:
 https://github.com/coq/platform/releases/tag/2022.04.1
+
+Only the coq and coqide components are needed.
