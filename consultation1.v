@@ -44,12 +44,26 @@ Goal ((P/\R)->Q) -> (P->(R->Q)).
 intros H1.
 intros H2.
 intros H3.
-pose proof (conj H2 H3) as H4.
+
+(*forward: 
+ pose proof (conj H2 H3) as H4.
 pose proof (H1 H4) as H5.
-exact H5.
+exact H5. *)
+
+(*backwards:*)
+
+apply H1.
+split.
+exact H2.
+exact H3.
+
+
+
 Qed.
 
-Q->R
+End Egors_question1.
+
+
 
 
 (* List of errors:
