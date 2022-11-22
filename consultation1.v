@@ -38,24 +38,26 @@ Qed.
 End consultation_exercise1_backwards.
 
 Section Egors_question1.
-Variables P Q R:Prop.
+Variables P Q R U:Prop.
+Hypothesis p1: U.
 Goal ((P/\R)->Q) -> (P->(R->Q)).
 
 intros H1.
 intros H2.
 intros H3.
 
-(*forward: 
+
+(*forward:  *)
  pose proof (conj H2 H3) as H4.
 pose proof (H1 H4) as H5.
-exact H5. *)
+exact H5. 
 
-(*backwards:*)
+(*backwards:* )
 
 apply H1.
 split.
 exact H2.
-exact H3.
+exact H3.*)
 
 
 
@@ -67,7 +69,10 @@ End Egors_question1.
 
 
 (* List of errors:
-or_inror is wrong
+Require Import Setoid needed for biconditional.
+or_intror is wrong
+for some students or_introl (B:=P) H1
+does not work.
 <-> inroduction is wrong
 Assert is missing from the cheatsheet *)
 
