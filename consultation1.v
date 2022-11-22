@@ -37,3 +37,23 @@ Qed.
 
 End consultation_exercise1_backwards.
 
+Section Egors_question1.
+Variables P Q R:Prop.
+Goal ((P/\R)->Q) -> (P->(R->Q)).
+
+intros H1.
+intros H2.
+intros H3.
+pose proof (conj H2 H3) as H4.
+pose proof (H1 H4) as H5.
+exact H5.
+Qed.
+
+Q->R
+
+
+(* List of errors:
+or_inror is wrong
+<-> inroduction is wrong
+Assert is missing from the cheatsheet *)
+
